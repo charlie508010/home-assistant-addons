@@ -12,3 +12,7 @@ configuration:
     name: mDNS Network Interface
     description: |
       Limit mDNS to this network interface. Only change it if you know what you are doing. Default: empty
+  storage_backend:
+    name: Storage backend
+    description: |
+      file = classic file store. sqlite = SQLite key-value store with automatic migration from existing files. Switching to sqlite migrates existing files automatically. Switching back to file uses the file store again; SQLite data is not migrated back automatically.
