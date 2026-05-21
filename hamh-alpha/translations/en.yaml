@@ -16,3 +16,15 @@ configuration:
     name: Storage backend
     description: |
       file = classic file store. sqlite = SQLite key-value store with automatic migration from existing files. Switching to sqlite migrates existing files automatically. Switching back to file uses the file store again; SQLite data is not migrated back automatically.
+  http_auth_enabled:
+    name: Enable HTTP authentication
+    description: |
+      Protect the HAMH web interface with HTTP basic authentication. Existing HAMH_HTTP_AUTH_USERNAME / HAMH_HTTP_AUTH_PASSWORD environment variables take precedence over this option.
+  http_auth_username:
+    name: HTTP authentication username
+    description: |
+      Username for the HAMH web interface. Used only when HTTP authentication is enabled and no HAMH_HTTP_AUTH_USERNAME environment variable is set.
+  http_auth_password:
+    name: HTTP authentication password
+    description: |
+      Password for the HAMH web interface. Used only when HTTP authentication is enabled and no HAMH_HTTP_AUTH_PASSWORD environment variable is set.

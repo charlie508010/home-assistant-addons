@@ -22,8 +22,14 @@ options:
   disable_log_colors: false
   mdns_network_interface: ""
   storage_backend: file
+  http_auth_enabled: false
+  http_auth_username: ""
+  http_auth_password: ""
 schema:
   app_log_level: list(silly|debug|info|notice|warn|error|fatal)
   disable_log_colors: bool
   mdns_network_interface: "str?"
   storage_backend: list(file|sqlite)
+  http_auth_enabled: bool
+  http_auth_username: "str?"
+  http_auth_password: "password?"
