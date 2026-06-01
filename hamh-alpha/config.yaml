@@ -1,4 +1,4 @@
-version: "2.1.0-alpha.886"
+version: "2.1.0-alpha.887"
 image: ghcr.io/charlie508010/home-assistant-addons
 slug: hamh-alpha-my
 name: Home-Assistant-Matter-Hub (Alpha) - charlie508010
