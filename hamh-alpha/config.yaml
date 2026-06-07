@@ -1,4 +1,4 @@
-version: "2.1.0-alpha.895"
+version: "2.1.0-alpha.896"
 image: ghcr.io/charlie508010/home-assistant-addons
 slug: hamh-alpha-my
 name: Home-Assistant-Matter-Hub (Alpha) - charlie508010
@@ -21,7 +21,7 @@ options:
   app_log_level: info
   disable_log_colors: false
   mdns_network_interface: ""
-  storage_backend: file
+  storage_backend: sqlite
   http_auth_enabled: false
   http_auth_username: ""
   http_auth_password: ""
